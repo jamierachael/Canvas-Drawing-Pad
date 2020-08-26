@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Jamie Morris Assignment 3 4/27/19  -->
+<!-- Canvas Drawing App  -->
+
+<head>
+       <meta charset="UTF-8">
+
+       <title>Assignment 3</title>
+       <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <!-- This is a heading  -->
+
+       <h1>My Canvas</h1>
+
+       <!-- These are the XY Coordinates for the mouse: "Impress Me"  -->
+       <!-- <label>Mouse Coordinates:</label>
+       <span id="demo7"></span> -->
+
+       <!-- This is the Canvas  -->
+       <div id="paint">
+              <canvas id="myCanvas"></canvas>
+       </div>
+       <!-- These are the XY Coordinates for the mouse: "Impress Me"  -->
+
+       <form>
+              <!-- <label>Mouse Coordinates:</label>
+              <span id="demo8"></span> -->
+
+              <!-- This is the color picker  -->
+
+              <h2>Pick a color, choose a tool!</h2>
+              <div id="fillcontainer">
+                     <label>Pick a color!</label>
+                     <input type="color" id="favcolor"><br><br>
+
+                     <!-- This provides the Hex value of the selected color  -->
+
+                     <label>Hex Value for Color Picker:</label> <span id="demo6"></span><br><br>
+                     <!-- This is the line thickness  -->
+                     <label>line thickness: </label>
+                     <input type="value" id="lineThick" value="5">
+                     <br>
+              </div>
+              <!-- This is the container for the RGBA Slider value  -->
+
+              <div id="slidecontainer">
+                     <!-- Value for (r)gba  -->
+                     <p><label id="paste">Red:</label> 0 <input id="redRange" type="range" min="0" max="255" value="100"
+                                   class="slider"> 255</p>
+                     <!-- Value for r(g)ba  -->
+                     <p><label id="paste2">Green:</label> 0 <input id="greenRange" type="range" min="0" max="255"
+                                   value="100" class="slider2"> 255</p>
+                     <!-- Value for rg(b)a  -->
+                     <p><label id="paste3">Blue:</label> 0 <input id="blueRange" type="range" min="0" max="255"
+                                   value="100" class="slider3"> 255</p>
+                     <!-- Value for rgb(a)  -->
+                     <p><label id="paste4">Alpha:</label> 0 <input id="alphaRange" type="range" min="0" max="10"
+                                   value="10" class="slider4"> 1.0</p>
+                     <!-- This is the line-width dialog with a single slider   -->
+                     <p><label id="paste5">Thick:</label> 1 <input id="lineSlider" type="range" min="1" max="100"
+                                   value="5" class="slider4"> 100</p>
+                     <!-- This is the color swatch for the selected RGBA slider value  -->
+                     <canvas id="swatch"></canvas>
+
+                     <!-- Output for RGB  -->
+
+                     <p>RGB Combined Value:</p>
+                     <label>(R) </label><span id="demo1"></span>
+                     <label>(G) </label> <span id="demo2"></span>
+                     <label>(B) </label> <span id="demo3"></span>
+                     <span id="demo4"></span>
+                     <label>(T) </label><span id="demo5"></span>
+
+              </div>
+       </form>
+       <br>
+
+       <!-- Buttons  -->
+
+       <button id="eraser">Eraser</button>
+       <button id="btn">Clear Entire Canvas</button>
+
+
+
+       <script src="index.js"></script>
+
+</body>
+
+</html>

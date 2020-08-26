@@ -1,0 +1,42 @@
+/* Jamie Morris Assignment 3 4/27/19  */ 
+/* Styles for body  */ 
+ 
+body {
+        margin: 10px;
+        padding: 10px;
+        background: #eef4f6;
+        
+      }
+
+      #myCanvas {
+              background: white;
+      }
+
+/* Styles for slider container  */ 
+
+#slidecontainer.label { display: inline-block; width: 3em; }
+         canvas { border: 1px solid black; }
+         input[type="range"] { width: 600px; }
+
+/* Styles for heading 1  */ 
+
+
+h1 { text-align: center;   
+}
+
+/* Styles for heading 2 */ 
+
+
+h2 {   font-size: 20px;
+
+}
+
+/* Styles for color swatch  */ 
+
+
+#swatch { width: 1000px; 
+        height: 50px; 
+        border: 1px;
+        background: transparent; 
+    
+}
